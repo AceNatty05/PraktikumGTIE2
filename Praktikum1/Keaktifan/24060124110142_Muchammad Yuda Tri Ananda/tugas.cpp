@@ -1,6 +1,6 @@
-# nama  : Muchammad Yuda Tri Ananda
-# nim   : 24060124110142
-# kelas : E
+// nama  : Muchammad Yuda Tri Ananda
+// nim   : 24060124110142
+// kelas : E
 #include <GL/glut.h>
 
 void persegii(float cx, float cy, float s) {
