@@ -1,3 +1,8 @@
+/* 
+Nama: Muhammad Fauzan Akbar
+NIM: 24060124140139
+*/
+
 #include <gl/glut.h>
 
 void gambarSatuKotak(float x, float y, float size) {
@@ -44,8 +49,8 @@ void display() {
     float s = 0.25f;
 
     // batang
-    gambarSatuKotak( 0.100f,  -0.50f, s); // batang kanan
-    gambarSatuKotak( -0.4f,  -0.50f, s); // batang kiri
+    gambarSatuKotak( 0.100f,  -0.50f, s);
+    gambarSatuKotak( -0.4f,  -0.50f, s);
     gambarSatuKotak(-0.150f, -0.50f, s); 
     gambarSatuKotak(-0.150f, -0.75f, s);
     
