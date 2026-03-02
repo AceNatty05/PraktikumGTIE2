@@ -1,4 +1,4 @@
-/* Nama File : perempuanUngu.c
+/* Nama File : perempuanUngu.cpp
  * Deskripsi : Mengenerate gambar dengan bangun dasar primitif dari fungsi openGL Glut
  * Pembuat   : Rafif Setya Imaduddin (24060124130115)
  * Tanggal   : 2 Maret 2026
@@ -105,4 +105,5 @@ int main(int argc, char* argv[]) {
     glutMainLoop();
     return 0;
 }
+
 
