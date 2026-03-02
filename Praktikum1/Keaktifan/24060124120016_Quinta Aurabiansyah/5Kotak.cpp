@@ -1,3 +1,5 @@
+// Nama : Quinta Aurabiansyah
+// NIM  : 24060124120016 
 #include <GL/glut.h>
 
 void kotak(float x, float y, float size, float r, float g, float b) {
@@ -63,3 +65,4 @@ int main(int argc, char** argv) {
     glutMainLoop();
     return 0;
 }
+
