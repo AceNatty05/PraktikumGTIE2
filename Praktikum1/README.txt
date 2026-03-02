@@ -1,8 +1,7 @@
-Ketentuan pengumpulan tugas GTI
+# Ketentuan pengumpulan tugas GTI
 
 Dikumpulkan ke repo github. Yang belum mendapatkan invitation ke repo-nya segera isi form berikut:
-https://docs.google.com/forms/d/e/1FAIpQLSeikvmWZZp0Sl7i0JyevIS8ePFAIKDEO8Qu6o8PxrB2OaJDZQ/viewform?usp=publish-editor
-
+XX RAHASIA XX
 Tugas Mingguan:
 Waktu pengerjaan 1 minggu. Maksimal sebelum pertemuan selanjutnya
 
