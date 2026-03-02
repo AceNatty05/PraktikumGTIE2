@@ -1,6 +1,7 @@
 // nama  : Muchammad Yuda Tri Ananda
 // nim   : 24060124110142
 // kelas : E
+// NOMOR 3
 #include <GL/glut.h>
 
 void persegii(float cx, float cy, float s) {
@@ -146,7 +147,7 @@ int main(int argc, char** argv) {
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGBA);
     glutInitWindowSize(900, 600);
-    glutCreateWindow("Project Praktikum GKV 1 - myudakk");
+    glutCreateWindow("Project Praktikum GKV 1 - myudakk - NOMER 3");
     init();
     glutDisplayFunc(display);
     glutMainLoop();
