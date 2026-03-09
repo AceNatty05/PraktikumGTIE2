@@ -1,4 +1,4 @@
-# Project: TesAsprak
+# Project: Project2
 # Makefile created by Dev-C++ 5.7.1
 
 CPP      = g++.exe -D__DEBUG__
