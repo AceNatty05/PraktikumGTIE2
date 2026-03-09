@@ -1,6 +1,6 @@
 /* Nama : Aqiatillah Rezi Zhafran
    NIM  : 24060124140124
-   Lab : E1 */
+   Lab : E2 */
 #include <GL/glut.h>
 
 void Makecabang()
