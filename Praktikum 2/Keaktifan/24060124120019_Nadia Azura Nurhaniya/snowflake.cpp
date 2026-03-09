@@ -1,6 +1,6 @@
 // Nama : Nadia Azura Nurhaniya
 // NIM  : 24060124120019
-// Deskripsi : membuat Snowflakes d
+// Deskripsi : membuat Snowflakes dengan memanfaatkan rotasi
 
 #include <GL/glut.h>
 #include <GL/gl.h>
