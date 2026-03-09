@@ -1,0 +1,24 @@
+#include <GL/glut.h>
+
+void Jendela(void)
+{
+    // membersihkan layar
+    glClear(GL_COLOR_BUFFER_BIT);
+
+    // memastikan seluruh perintah dieksekusi
+    glFlush();
+}
+
+int main(int argc, char* argv[])
+{
+    glutInit(&argc, argv);
+    glutInitWindowSize(640, 480);
+    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGBA);
+    glutCreateWindow("biru");
+
+    glClearColor(0.0f, 0.0f, 1.0f, 1.0f); // warna biru
+    glutDisplayFunc(Jendela);
+
+    glutMainLoop();
+    return 0;
+}
