@@ -27,7 +27,7 @@ void snowflake() {
         // GAMBAR LENGAN UTAMA
         glBegin(GL_LINES);
             glVertex2f(0.0, 0.0);
-            glVertex2f(0.0, 0.75);  // lengan lebih panjang
+            glVertex2f(0.0, 0.75); 
         glEnd();
         
         // === TANDA PANAH 1 (BAWAH) ===
@@ -47,15 +47,14 @@ void snowflake() {
         glBegin(GL_LINES);
             // cabang kanan atas
             glVertex2f(0.0, 0.5);
-            glVertex2f(0.12, 0.62);  // sedikit lebih panjang/lebar
+            glVertex2f(0.12, 0.62); 
             
             // cabang kiri atas
             glVertex2f(0.0, 0.5);
             glVertex2f(-0.12, 0.62);
         glEnd();
         
-        // === TAMBAHAN: ORNAMEN DI UJUNG (opsional) ===
-        // Bisa ditambah segitiga kecil di ujung
+        // === TAMBAHAN: ORNAMEN DI UJUNG ===
         glBegin(GL_TRIANGLES);
             glVertex2f(0.0, 0.75);
             glVertex2f(0.07, 0.68);
