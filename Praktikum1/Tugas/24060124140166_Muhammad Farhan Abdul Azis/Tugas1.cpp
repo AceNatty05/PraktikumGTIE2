@@ -88,7 +88,7 @@ int main(int argc, char* argv[])
     glutInit(&argc, argv);
     glutInitWindowSize(800, 600);
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGBA);
-    glutCreateWindow("Tugas 1 & 2 - Semua Primitif OpenGL");
+    glutCreateWindow("Tugas 1 & 2");
     glutDisplayFunc(Display);
     glClearColor(0.5f, 0.5f, 0.5f, 0.5f);
     glutMainLoop();

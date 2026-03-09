@@ -2,10 +2,7 @@
 
 void Jendela(void)
 {
-    // membersihkan layar
     glClear(GL_COLOR_BUFFER_BIT);
-
-    // memastikan seluruh perintah dieksekusi
     glFlush();
 }
 
