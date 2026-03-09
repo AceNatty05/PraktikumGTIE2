@@ -5,21 +5,21 @@
 #include <GL/glut.h>
 #include <cmath>
 
-void drawFilledCircle(float radius, int segments) {
+void gambarLingkaranIsi(float jariJari, int jumlahSegmen) {
     glBegin(GL_POLYGON);
-    for (int i = 0; i < segments; i++) {
-        float angle = 2.0f * 3.14159265358979323846f * i / segments;
-        glVertex2f(radius * cos(angle), radius * sin(angle));
+    for (int i = 0; i < jumlahSegmen; i++) {
+        float sudut = 2.0f * 3.14159265358979323846f * i / jumlahSegmen;
+        glVertex2f(jariJari * cos(sudut), jariJari * sin(sudut));
     }
     glEnd();
 }
 
-void drawWheel() {
+void gambarRoda() {
     glColor3f(0.1f, 0.1f, 0.1f);
-    drawFilledCircle(0.12f, 50);
+    gambarLingkaranIsi(0.12f, 50);
 
     glColor3f(0.8f, 0.8f, 0.8f);
-    drawFilledCircle(0.05f, 50);
+    gambarLingkaranIsi(0.05f, 50);
 
     glColor3f(1.0f, 1.0f, 1.0f);
     glLineWidth(2.0f);
@@ -31,7 +31,7 @@ void drawWheel() {
     glEnd();
 }
 
-void drawCarBody() {
+void gambarBodiMobil() {
     glColor3f(0.9f, 0.1f, 0.1f);
     glBegin(GL_QUADS);
         glVertex2f(-0.60f, -0.05f);
@@ -79,18 +79,18 @@ void display() {
     glPushMatrix();
         glTranslatef(0.0f, -0.1f, 0.0f);
 
-        drawCarBody();
+        gambarBodiMobil();
 
         glPushMatrix();
             glTranslatef(-0.35f, -0.05f, 0.0f);
             glRotatef(25.0f, 0.0f, 0.0f, 1.0f);
-            drawWheel();
+            gambarRoda();
         glPopMatrix();
 
         glPushMatrix();
             glTranslatef(0.35f, -0.05f, 0.0f);
             glRotatef(25.0f, 0.0f, 0.0f, 1.0f);
-            drawWheel();
+            gambarRoda();
         glPopMatrix();
     glPopMatrix();
 

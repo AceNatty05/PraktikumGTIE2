@@ -6,21 +6,19 @@
 
 #define PI 3.14159265358979323846
 
-void drawCircle(float radius, int segments) {
+void gambarLingkaran(float jariJari, int jumlahSegmen) {
     glBegin(GL_LINE_LOOP);
-    for (int i = 0; i < segments; i++) {
-        float angle = 2.0f * PI * i / segments;
-        glVertex2f(radius * cos(angle), radius * sin(angle));
+    for (int i = 0; i < jumlahSegmen; i++) {
+        float sudut = 2.0f * PI * i / jumlahSegmen;
+        glVertex2f(jariJari * cos(sudut), jariJari * sin(sudut));
     }
     glEnd();
 }
 
 void display() {
     glClear(GL_COLOR_BUFFER_BIT);
-
     glColor3f(1.0f, 1.0f, 1.0f);
-    drawCircle(0.45f, 100);
-
+    gambarLingkaran(0.45f, 100);
     glFlush();
 }
 
