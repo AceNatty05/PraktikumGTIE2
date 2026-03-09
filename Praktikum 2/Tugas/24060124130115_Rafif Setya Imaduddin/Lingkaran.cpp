@@ -1,5 +1,6 @@
 /* Nama File : Lingkaran.cpp
- * Deskripsi : Mengenerate bangun dasar lingkaran dengan memanfaatkan teori lingkaran matematika
+ * Deskripsi : Mengenerate bangun dasar lingkaran dengan
+			   memanfaatkan teori lingkaran matematika
  * Pembuat   : Rafif Setya Imaduddin (24060124130115)
  * Tanggal   : 9 Maret 2026
  */
@@ -33,8 +34,8 @@ void display() {
 	
 	glPushMatrix();
 		glColor3f(1.0f, 1.0f, 1.0f);
-	  	glLineWidth(6.7f);
-	  	Lingkaran(0.67f, 500);
+		glLineWidth(6.7f);
+		Lingkaran(0.67f, 500);
 	glPopMatrix();
 
 	glFlush();
