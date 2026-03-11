@@ -5,7 +5,7 @@ void snowflake() {
     glClear(GL_COLOR_BUFFER_BIT);
     glColor3f(1.0, 1.0, 1.0);
     
-    // ===== LINGKARAN PUSAT =====
+    //  LINGKARAN PUSAT 
     int segments = 30;
     float radius = 0.09;
     glBegin(GL_POLYGON);
@@ -15,7 +15,7 @@ void snowflake() {
         }
     glEnd();
     
-    // ===== LENGAN DENGAN DUA TANDA PANAH =====
+    //  LENGAN DENGAN DUA TANDA PANAH 
     glLineWidth(8.0);
     
     int sides = 8;
@@ -27,10 +27,10 @@ void snowflake() {
         // GAMBAR LENGAN UTAMA
         glBegin(GL_LINES);
             glVertex2f(0.0, 0.0);
-            glVertex2f(0.0, 0.75); 
+            glVertex2f(0.0, 0.75);
         glEnd();
         
-        // === TANDA PANAH 1 (BAWAH) ===
+        //  TANDA PANAH 1 (BAWAH) 
         // Di posisi y = 0.25 dari pusat
         glBegin(GL_LINES);
             // cabang kanan bawah
@@ -42,7 +42,7 @@ void snowflake() {
             glVertex2f(-0.1, 0.35);
         glEnd();
         
-        // === TANDA PANAH 2 (ATAS) ===
+        //  TANDA PANAH 2 (ATAS) 
         // Di posisi y = 0.5 dari pusat
         glBegin(GL_LINES);
             // cabang kanan atas
@@ -54,7 +54,7 @@ void snowflake() {
             glVertex2f(-0.12, 0.62);
         glEnd();
         
-        // === TAMBAHAN: ORNAMEN DI UJUNG ===
+        // segitiga kecil di ujung
         glBegin(GL_TRIANGLES);
             glVertex2f(0.0, 0.75);
             glVertex2f(0.07, 0.68);
