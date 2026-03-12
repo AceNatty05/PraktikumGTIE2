@@ -1,3 +1,6 @@
+// Nama        : Joshua Satria Kusuma
+// NIM         : 24060124130113
+// Kelas/lab   : E / E2
 #include <GLUT/glut.h>
 
 void drawBranch(void) {
