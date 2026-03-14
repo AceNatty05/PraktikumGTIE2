@@ -1,5 +1,4 @@
 #include <GL/glut.h>
-#include <GL/glut.h>
 #include <math.h>
 
 void Mobil(void)
