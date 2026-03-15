@@ -49,6 +49,20 @@ void drawCircleOutline(float Radius) {
     glEnd();
 }
 
+void Awan(float Radius, int Segments) {
+	// Kamus Lokal
+	int i;
+	float Angle;
+	
+	// Algoritma	
+	glBegin(GL_TRIANGLE_FAN);
+	for (i = 0; i < Segments; i++) {
+		Angle = 2.0f * Pi * i / Segments;
+		glVertex2f(Radius * cos(Angle), Radius * sin(Angle - 0.5f));
+	}
+	glEnd();
+}
+
 void drawWheel() {
 	// Kamus Lokal
     int Bars; 
@@ -152,11 +166,15 @@ void drawGround() {
     // Algoritma
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     //= Garis tanah
-    glLineWidth(2.0f);
+    glLineWidth(3.0f);
     glColor3f(1.0f, 1.0f, 1.0f);
     glBegin(GL_LINES);
         glVertex2f(-1.0f, groundY - 0.005f);
         glVertex2f(1.0f, groundY - 0.005f);
+    glEnd();
+    glBegin(GL_LINES);
+        glVertex2f(-1.0f, groundY - 0.1f);
+        glVertex2f(1.0f, groundY - 0.1f);
     glEnd();
 }
 
@@ -169,9 +187,118 @@ void Display() {
 
     drawGround();
 
+    //= Pohon
+    glPushMatrix();
+        glRotatef(90.0f, 0.0f, 0.0f, 1.0f);
+        glColor3f(0.2f, 0.5f, 0.3f);
+        Awan(0.2f, 500);
+    glPopMatrix();
+
+    glPushMatrix();
+        glRotatef(180.0f, 0.0f, 0.0f, 1.0f);
+        glColor3f(0.2f, 0.5f, 0.3f);
+        Awan(0.2f, 500);
+    glPopMatrix();
+
+    glPushMatrix();
+        glTranslatef(0.0f, 0.2f, 0.0f);
+        glRotatef(90.0f, 0.0f, 0.0f, 1.0f);
+        glColor3f(0.2f, 0.5f, 0.3f);
+        Awan(0.2f, 500);
+    glPopMatrix();
+
+    glPushMatrix();
+        glTranslatef(0.0f, 0.2f, 0.0f);
+        glRotatef(180.0f, 0.0f, 0.0f, 1.0f);
+        glColor3f(0.2f, 0.5f, 0.3f);
+        Awan(0.2f, 500);
+    glPopMatrix();
+
+    glPushMatrix();
+        glColor3f(0.4f, 0.4f, 0.3f);
+        glRectf(-0.1f, -0.35f, 0.1f, 0.0f);
+    glPopMatrix();
+
+    //= Awan
+    glPushMatrix();
+        glPushMatrix();
+            glTranslatef(0.9f, 0.95f, 0.0f);
+            glColor3f(1.0f, 1.0f, 1.0f);
+            glLineWidth(6.7f);
+            Awan(0.2f, 500);
+        glPopMatrix();
+
+        glPushMatrix();
+            glTranslatef(0.8f, 0.95f, 0.0f);
+            glRotatef(75.0f, 0.0f, 0.0f, 1.0f);
+            glColor3f(1.0f, 1.0f, 1.0f);
+            glLineWidth(6.7f);
+            Awan(0.2f, 500);
+        glPopMatrix();
+    glPopMatrix();
+
+    glPushMatrix();
+        glTranslatef(-0.6f, 0.0f, 0.0f);
+        glPushMatrix();
+            glTranslatef(0.8f, 0.95f, 0.0f);
+            glColor3f(1.0f, 1.0f, 1.0f);
+            glLineWidth(6.7f);
+            Awan(0.2f, 500);
+        glPopMatrix();
+            glPushMatrix();
+            glTranslatef(0.2f, 0.95f, 0.0f);
+            glColor3f(1.0f, 1.0f, 1.0f);
+            glLineWidth(6.7f);
+            Awan(0.2f, 500);
+        glPopMatrix();
+        glPopMatrix();
+            glPushMatrix();
+            glTranslatef(0.4f, 0.95f, 0.0f);
+            glColor3f(1.0f, 1.0f, 1.0f);
+            glLineWidth(6.7f);
+            Awan(0.2f, 500);
+        glPopMatrix();
+        glTranslatef(-0.5f, 0.0f, 0.0f);
+        glPushMatrix();
+            glTranslatef(0.1f, 0.95f, 0.0f);
+            glRotatef(75.0f, 0.0f, 0.0f, 1.0f);
+            glColor3f(1.0f, 1.0f, 1.0f);
+            glLineWidth(6.7f);
+            Awan(0.2f, 500);
+        glPopMatrix();
+        glPushMatrix();
+            glTranslatef(-0.8f, 0.95f, 0.0f);
+            glRotatef(75.0f, 0.0f, 0.0f, 1.0f);
+            glColor3f(1.0f, 1.0f, 1.0f);
+            glLineWidth(6.7f);
+            Awan(0.2f, 500);
+        glPopMatrix();
+        glPushMatrix();
+            glTranslatef(0.8f, 0.95f, 0.0f);
+            glRotatef(75.0f, 0.0f, 0.0f, 1.0f);
+            glColor3f(1.0f, 1.0f, 1.0f);
+            glLineWidth(6.7f);
+            Awan(0.2f, 500);
+        glPopMatrix();
+        glPushMatrix();
+            glTranslatef(-0.9f, 0.95f, 0.0f);
+            glRotatef(75.0f, 0.0f, 0.0f, 1.0f);
+            glColor3f(1.0f, 1.0f, 1.0f);
+            glLineWidth(6.7f);
+            Awan(0.2f, 500);
+        glPopMatrix();
+        glPushMatrix();
+            glTranslatef(-0.9f, 0.95f, 0.0f);
+            glRotatef(75.0f, 0.0f, 0.0f, 1.0f);
+            glColor3f(1.0f, 1.0f, 1.0f);
+            glLineWidth(6.7f);
+            Awan(0.2f, 500);
+        glPopMatrix();
+    glPopMatrix();
+
     glPushMatrix();
     	//= Translasi seluruh mobil
-        glTranslatef(CarX, CarY, 0);
+        glTranslatef(CarX, CarY - 0.05f, 0.0f);
 
 		//= Frame mobil
         glPushMatrix();
