@@ -3,6 +3,11 @@
 // LAB		: E2
 
 
+// Nama		: Harits Permana
+// NIM		: 24060124140131
+// LAB		: E2
+
+
 #include <GL/glut.h>
 #include <cmath>
 
@@ -165,6 +170,18 @@ void display() {
     glutSwapBuffers();
 }
 
+void update() {
+    carPosX += 0.001f;
+    rotAngle += 5.0f;
+
+    if (carPosX > 1.2f) { 
+        rotAngle = -1.2f;
+		carPosX = -1.2f;
+    }
+
+    glutPostRedisplay();
+}
+
 void keyboard(unsigned char key, int x, int y) {
     switch (key) {
         case '1':
@@ -173,23 +190,7 @@ void keyboard(unsigned char key, int x, int y) {
         case '2':
             modeTampil = 2;
             break;
-        case 'a':
-        case 'A':
-            carPosX -= 0.05f;
-            break;
-        case 'd':
-        case 'D':
-            carPosX += 0.05f;
-            break;
-        case 'w':
-        case 'W':
-            rotAngle += 10.0f;
-            break;
-        case 's':
-        case 'S':
-            rotAngle -= 10.0f;
-            break;
-        case 27: // ESC
+        case 27:
             exit(0);
             break;
     }
@@ -216,6 +217,7 @@ int main(int argc, char** argv) {
     init();
 
     glutDisplayFunc(display);
+    glutIdleFunc(update);
     glutKeyboardFunc(keyboard);
 
     glutMainLoop();
