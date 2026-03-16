@@ -1,6 +1,6 @@
 /*Nama	: Muhammad Fauzan Akbar
   NIM	: 24060124140139
-  LAB	: GTI E1
+  LAB	: GTI E2
 */
 #include <GL/glut.h>
 #include <cmath>
