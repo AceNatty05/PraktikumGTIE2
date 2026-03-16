@@ -1,4 +1,4 @@
-/*Nama	: Fauzan A
+/*Nama	: Muhammad Fauzan Akbar
   NIM	: 24060124140139
   LAB	: GTI E1
 */
