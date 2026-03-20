@@ -34,3 +34,4 @@ int main(int argc, char* argv[])
    glClearColor(0.800f, 0.407f, 0.858f, 0.94f);
    glutMainLoop();
    return 0;
+}
