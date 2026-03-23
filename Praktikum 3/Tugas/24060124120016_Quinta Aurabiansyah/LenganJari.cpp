@@ -51,7 +51,7 @@ void drawFinger(float length1, float length2, float width,
     glPushMatrix();
     glRotatef(rotasiAwal, 0.0f, 0.0f, 1.0f);
 
-    // Ruas pertama
+    //ruas pertama
     glRotatef((GLfloat)curl, 0.0f, 0.0f, 1.0f);
     glTranslatef(length1 / 2.0f, 0.0f, 0.0f);
     glPushMatrix();
