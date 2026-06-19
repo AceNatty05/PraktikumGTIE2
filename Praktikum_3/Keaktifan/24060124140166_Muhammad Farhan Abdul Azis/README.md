@@ -3,8 +3,6 @@
 Nama: Muhammad Farhan Abdul Azis  
 NIM: 24060124140166
 
-Folder ini berisi jawaban teori singkat dan dua program OpenGL GLUT untuk tugas keaktifan, yaitu model tangan dengan pose `Telunjuk Naik` dan `Peace Sign`.
-
 ## Jawaban Teori
 
 ### 1. Fungsi `glutReshapeFunc` dan `glutPostRedisplay`
